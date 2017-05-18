@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Event Summary</title>
+</head>
+<body>
+<table border="1">
+		<thead>
+			<tr>
+			  <th>Event</th>
+		      <th>GOOD</th>
+		      <th>BAD</th>
+		      <th>NEITHER</th>
+		    </tr>
+		</thead>
+		<tr th:each="e : ${eventSummaries}">
+	      <td th:text="${e.event}">Index</td>
+	      <td th:text="${e.goodCount}">goodCount</td>
+	      <td th:text="${e.badCount}">badCount</td>
+	      <td th:text="${e.neitherCount}">neitherCount</td>
+	    </tr>
+	</table>
+</body>
+</html>

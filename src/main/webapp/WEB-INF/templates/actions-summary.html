@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Actions Summary</title>
+</head>
+<body>
+<table border="1">
+		<thead>
+			<tr>
+			  <th>Action</th>
+		      <th>GOOD</th>
+		      <th>BAD</th>
+		      <th>NEITHER</th>
+		    </tr>
+		</thead>
+		<tr th:each="a : ${actionSummaries}">
+	      <td th:text="${a.action}">Index</td>
+	      <td th:text="${a.goodCount}">goodCount</td>
+	      <td th:text="${a.badCount}">badCount</td>
+	      <td th:text="${a.neitherCount}">neitherCount</td>
+	    </tr>
+	</table>
+</body>
+</html>

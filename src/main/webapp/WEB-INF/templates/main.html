@@ -4,9 +4,18 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
 <meta charset="UTF-8"/>
-<title>Dashboard</title>
+<title>Event Rating Analytics</title>
 </head>
 <body>
-	<h1>Mein erste Dashboard!</h1>
+	Choose from the following analytics.
+	<h1>Per Event</h1>
+	<br/> <a href="/events/allratings">See a list of all ratings.</a>
+	<br/> <a href="/events/actionsummaries">See a summary of all ratings per action.</a>
+	<br/> <a href="/events/summary">See a summary of all rating across all actions</a>
+	<h1>Per Action</h1>
+	<br/> <a href="/actions/allratings">See a list of all ratings.</a>
+	<br/> <a href="/actions/eventsummaries">See a summary of all ratings per event.</a>
+	<br/> <a href="/actions/summary">See a summary of all ratings across all events</a>
+	
 </body>
 </html>
