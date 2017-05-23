@@ -13,7 +13,8 @@ import de.masch.webstarter.model.Rating;
 import de.masch.webstarter.model.Rating.RatingOption;
 
 @Controller
-@RequestMapping("actions/summary")public class ActionsSummaryController {
+@RequestMapping("actions/summary")
+public class ActionsSummaryController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String getPage(Model model){
 		String csvFileURL = "C:/Users/Julia Lahn/workspaceDashboard/hello-world-event-rater/src/main/resources/ratings.csv";
